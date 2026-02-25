@@ -163,6 +163,44 @@
       border-top: 1px solid #dde4ec;
     }
 
+    /* ── Teams table ── */
+    .teams-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 16px;
+      font-size: 0.875rem;
+    }
+
+    .teams-table th {
+      text-align: left;
+      padding: 9px 12px;
+      background: #eaf4fb;
+      color: #0d5c8a;
+      font-weight: 600;
+      border-bottom: 2px solid #c8dfee;
+    }
+
+    .teams-table td {
+      padding: 10px 12px;
+      color: #3d4a5c;
+      border-bottom: 1px solid #edf2f7;
+      vertical-align: top;
+    }
+
+    .teams-table tr:last-child td { border-bottom: none; }
+    .teams-table tr:hover td { background: #f7fafd; }
+
+    .league-tag {
+      display: inline-block;
+      font-size: 0.72rem;
+      font-weight: 600;
+      color: #0d5c8a;
+      background: #daeef8;
+      border-radius: 4px;
+      padding: 2px 7px;
+      white-space: nowrap;
+    }
+
     /* ── Responsive ── */
     @media (max-width: 600px) {
       header { padding: 36px 20px 32px; flex-direction: column; align-items: flex-start; gap: 16px; }
@@ -170,6 +208,7 @@
       header h1 { font-size: 1.7rem; }
       section { padding: 22px 18px; }
       main { padding: 0 12px 48px; margin-top: 24px; }
+      .teams-table { display: block; overflow-x: auto; }
     }
   </style>
 </head>
@@ -244,6 +283,72 @@
         <span class="inst">JPMorganChase</span>
       </div>
     </div>
+  </section>
+
+  <section>
+    <h2>US Teams at RoboCup 2025 — Salvador, Brazil</h2>
+    <p>Ten US teams competed at <a href="https://2025.robocup.org" target="_blank" rel="noopener">RoboCup 2025</a> across six leagues.</p>
+    <table class="teams-table">
+      <thead>
+        <tr>
+          <th>League</th>
+          <th>Team</th>
+          <th>Institution</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><span class="league-tag">@Home DSP</span></td>
+          <td>RoboCanes-VISAGE</td>
+          <td>University of Miami</td>
+        </tr>
+        <tr>
+          <td><span class="league-tag">@Home DSP</span></td>
+          <td>UT Austin Villa@Home</td>
+          <td>The University of Texas at Austin</td>
+        </tr>
+        <tr>
+          <td><span class="league-tag">Industrial @Work</span></td>
+          <td>Mountaineers@Work</td>
+          <td>West Virginia University</td>
+        </tr>
+        <tr>
+          <td><span class="league-tag">Rescue Robot</span></td>
+          <td>BSM Robotics</td>
+          <td>Benilde-St. Margaret's</td>
+        </tr>
+        <tr>
+          <td><span class="league-tag">Soccer Humanoid</span></td>
+          <td>UT Austin Villa</td>
+          <td>The University of Texas at Austin</td>
+        </tr>
+        <tr>
+          <td><span class="league-tag">Soccer Sim 2D</span></td>
+          <td>Oxsy</td>
+          <td>Foxsy AI</td>
+        </tr>
+        <tr>
+          <td><span class="league-tag">Soccer Small Size</span></td>
+          <td>RoboJackets</td>
+          <td>Georgia Institute of Technology</td>
+        </tr>
+        <tr>
+          <td><span class="league-tag">Soccer Small Size</span></td>
+          <td>The A-Team</td>
+          <td>George P. Burdell Institute of Success</td>
+        </tr>
+        <tr>
+          <td><span class="league-tag">Soccer Small Size</span></td>
+          <td>The Bots</td>
+          <td>Unaffiliated Community Organization</td>
+        </tr>
+        <tr>
+          <td><span class="league-tag">Soccer SPL</span></td>
+          <td>WisTex United</td>
+          <td>University of Wisconsin – Madison &amp; UT Austin</td>
+        </tr>
+      </tbody>
+    </table>
   </section>
 
   <section>

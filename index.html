@@ -163,6 +163,77 @@
       border-top: 1px solid #dde4ec;
     }
 
+    /* ── Events ── */
+    .event-list {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      margin-top: 4px;
+    }
+
+    .event-card {
+      display: flex;
+      gap: 16px;
+      align-items: flex-start;
+      background: #f7fafd;
+      border: 1px solid #ddeaf4;
+      border-radius: 8px;
+      padding: 16px 18px;
+      text-decoration: none !important;
+      color: inherit;
+      transition: box-shadow 0.15s, border-color 0.15s;
+    }
+
+    .event-card:hover {
+      border-color: #0d5c8a;
+      box-shadow: 0 2px 8px rgba(13,92,138,0.1);
+      text-decoration: none !important;
+    }
+
+    .event-date {
+      background: #0d5c8a;
+      color: #fff;
+      border-radius: 6px;
+      padding: 8px 10px;
+      text-align: center;
+      min-width: 52px;
+      flex-shrink: 0;
+      line-height: 1.2;
+    }
+
+    .event-date .month {
+      font-size: 0.65rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+    }
+
+    .event-date .day {
+      font-size: 1.4rem;
+      font-weight: 300;
+      display: block;
+    }
+
+    .event-date .day-range {
+      font-size: 0.75rem;
+      font-weight: 500;
+      display: block;
+    }
+
+    .event-info { flex: 1; }
+
+    .event-info strong {
+      display: block;
+      font-size: 0.95rem;
+      color: #0d5c8a;
+      margin-bottom: 2px;
+    }
+
+    .event-info span {
+      font-size: 0.82rem;
+      color: #6b7a8d;
+    }
+
     /* ── Teams table ── */
     .teams-table {
       width: 100%;
@@ -385,7 +456,35 @@
       for teams and participants, or <a href="http://robocupjunior.us" target="_blank" rel="noopener">robocupjunior.us</a>
       for junior division information.
     </p>
-    <p>Join the global community on Discord:</p>
+    <div class="event-list">
+      <a class="event-card" href="https://ateam.soccer/events/peachtree-open-2026" target="_blank" rel="noopener">
+        <div class="event-date">
+          <span class="month">Mar</span>
+          <span class="day">21</span>
+          <span class="day-range">2026</span>
+        </div>
+        <div class="event-info">
+          <strong>RoboCup US Open 2026 — The Peachtree SSL Open</strong>
+          <span>Georgia Institute of Technology &mdash; Atlanta, GA</span>
+        </div>
+      </a>
+      <a class="event-card" href="https://2025.robocupamericas.org/" target="_blank" rel="noopener">
+        <div class="event-date">
+          <span class="month">Apr</span>
+          <span class="day-range">25–29</span>
+          <span class="day-range">2025</span>
+        </div>
+        <div class="event-info">
+          <strong>RoboCup Americas 2025</strong>
+          <span>Mercersburg Academy &mdash; Mercersburg, PA</span>
+        </div>
+      </a>
+    </div>
+  </section>
+
+  <section>
+    <h2>Join the Community</h2>
+    <p>Connect with the global RoboCup community on Discord:</p>
     <div class="discord-links">
       <a class="discord-btn" href="https://discord.gg/5KcRJJwy" target="_blank" rel="noopener">
         <svg width="18" height="14" viewBox="0 0 71 55" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M60.1 4.9A58.6 58.6 0 0 0 45.7.9a.2.2 0 0 0-.2.1 40.8 40.8 0 0 0-1.8 3.7 54.1 54.1 0 0 0-16.2 0A37.7 37.7 0 0 0 25.7 1a.2.2 0 0 0-.2-.1A58.4 58.4 0 0 0 11.1 4.9a.2.2 0 0 0-.1.1C1.6 18.7-.9 32.2.3 45.5a.2.2 0 0 0 .1.2 58.9 58.9 0 0 0 17.7 9 .2.2 0 0 0 .2-.1 42.1 42.1 0 0 0 3.6-5.9.2.2 0 0 0-.1-.3 38.8 38.8 0 0 1-5.5-2.6.2.2 0 0 1 0-.4c.4-.3.7-.6 1.1-.9a.2.2 0 0 1 .2 0c11.5 5.3 24 5.3 35.4 0a.2.2 0 0 1 .2 0l1.1.9a.2.2 0 0 1 0 .4 36.1 36.1 0 0 1-5.5 2.6.2.2 0 0 0-.1.3 47.3 47.3 0 0 0 3.6 5.9.2.2 0 0 0 .2.1 58.7 58.7 0 0 0 17.8-9 .2.2 0 0 0 .1-.2c1.4-15.4-2.4-28.8-10.1-40.5a.2.2 0 0 0-.1-.1ZM23.7 37.8c-3.5 0-6.4-3.2-6.4-7.2s2.8-7.2 6.4-7.2c3.6 0 6.5 3.3 6.4 7.2 0 3.9-2.8 7.2-6.4 7.2Zm23.7 0c-3.5 0-6.4-3.2-6.4-7.2s2.8-7.2 6.4-7.2c3.6 0 6.5 3.3 6.4 7.2 0 3.9-2.8 7.2-6.4 7.2Z" fill="currentColor"/></svg>

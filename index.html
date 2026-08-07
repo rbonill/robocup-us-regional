@@ -11,10 +11,10 @@
 
   <!-- Open Graph -->
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://rbonill.github.io/robocup-us-regional/">
+  <meta property="og:url" content="https://us.robocup.org/">
   <meta property="og:title" content="US RoboCup — Regional Committee">
   <meta property="og:description" content="The US RoboCup Regional Committee promotes robotics and AI research across the United States through local events and researcher networking.">
-  <meta property="og:image" content="https://rbonill.github.io/robocup-us-regional/robocup-logo.png">
+  <meta property="og:image" content="https://us.robocup.org/robocup-logo.png">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
   <style>
     * { box-sizing: border-box; margin: 0; padding: 0; }
@@ -283,6 +283,63 @@
       white-space: nowrap;
     }
 
+    /* ── Collapsible archive ── */
+    .archive {
+      margin-top: 20px;
+      border-top: 1px solid #edf2f7;
+      padding-top: 16px;
+    }
+
+    .archive > summary {
+      cursor: pointer;
+      list-style: none;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 0.875rem;
+      font-weight: 600;
+      color: #0d5c8a;
+      padding: 8px 12px;
+      background: #f7fafd;
+      border: 1px solid #ddeaf4;
+      border-radius: 6px;
+      transition: border-color 0.15s, background 0.15s;
+    }
+
+    .archive > summary::-webkit-details-marker { display: none; }
+
+    .archive > summary:hover {
+      background: #eaf4fb;
+      border-color: #c8dfee;
+    }
+
+    .archive > summary::before {
+      content: '';
+      width: 0;
+      height: 0;
+      flex-shrink: 0;
+      border-left: 5px solid currentColor;
+      border-top: 4px solid transparent;
+      border-bottom: 4px solid transparent;
+      transition: transform 0.15s;
+    }
+
+    .archive[open] > summary::before { transform: rotate(90deg); }
+
+    .archive > summary .count {
+      margin-left: auto;
+      font-weight: 400;
+      font-size: 0.8rem;
+      color: #6b7a8d;
+    }
+
+    .archive .archive-body { padding: 4px 2px 0; }
+
+    .archive .archive-body p {
+      margin-top: 12px;
+      font-size: 0.875rem;
+    }
+
     /* ── Discord links ── */
     .discord-links {
       display: flex;
@@ -460,6 +517,77 @@
         </tr>
       </tbody>
     </table>
+
+    <details class="archive">
+      <summary>
+        Previous year: RoboCup 2025 &mdash; Salvador, Brazil
+        <span class="count">10 teams</span>
+      </summary>
+      <div class="archive-body">
+        <p>Ten US teams competed at <a href="https://2025.robocup.org" target="_blank" rel="noopener">RoboCup 2025</a> across six leagues.</p>
+        <table class="teams-table">
+          <thead>
+            <tr>
+              <th>League</th>
+              <th>Team</th>
+              <th>Institution</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><span class="league-tag">@Home DSP</span></td>
+              <td>RoboCanes-VISAGE</td>
+              <td>University of Miami</td>
+            </tr>
+            <tr>
+              <td><span class="league-tag">@Home DSP</span></td>
+              <td>UT Austin Villa@Home</td>
+              <td>The University of Texas at Austin</td>
+            </tr>
+            <tr>
+              <td><span class="league-tag">Industrial @Work</span></td>
+              <td>Mountaineers@Work</td>
+              <td>West Virginia University</td>
+            </tr>
+            <tr>
+              <td><span class="league-tag">Rescue Robot</span></td>
+              <td>BSM Robotics</td>
+              <td>Benilde-St. Margaret's</td>
+            </tr>
+            <tr>
+              <td><span class="league-tag">Soccer Humanoid</span></td>
+              <td>UT Austin Villa</td>
+              <td>The University of Texas at Austin</td>
+            </tr>
+            <tr>
+              <td><span class="league-tag">Soccer Sim 2D</span></td>
+              <td>Oxsy</td>
+              <td>Foxsy AI</td>
+            </tr>
+            <tr>
+              <td><span class="league-tag">Soccer Small Size</span></td>
+              <td>RoboJackets</td>
+              <td>Georgia Institute of Technology</td>
+            </tr>
+            <tr>
+              <td><span class="league-tag">Soccer Small Size</span></td>
+              <td>The A-Team</td>
+              <td>Community team (USA)</td>
+            </tr>
+            <tr>
+              <td><span class="league-tag">Soccer Small Size</span></td>
+              <td>The Bots</td>
+              <td>Community team (USA)</td>
+            </tr>
+            <tr>
+              <td><span class="league-tag">Soccer SPL</span></td>
+              <td>WisTex United</td>
+              <td>University of Wisconsin&ndash;Madison &amp; UT Austin</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </details>
   </section>
 
   <section>

@@ -12,5 +12,5 @@ only lets one repository use a domain. Keep the `rel="canonical"` link to https:
 2. Merge to `main` with this `CNAME`, then confirm GitHub Pages shows `us.robocupamericas.org` as the custom domain
    (`gh api repos/rbonill/robocup-us-regional/pages` → `"cname": "us.robocupamericas.org"`).
 3. Only then create the DNS record in the robocupamericas.org zone at FastComet: `us` CNAME `rbonill.github.io.`
-   A record pointing at GitHub before the domain is bound here could be claimed by another Pages site.
+   A DNS record pointing at GitHub before the domain is bound here could be claimed by another Pages site.
 4. When GitHub has issued the certificate, turn on **Enforce HTTPS**.
